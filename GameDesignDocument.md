@@ -17,13 +17,13 @@ We decided to pursue this design because we wanted our players to be immersed in
 
 For our game, we wanted to give players the experience of being special Gravekeepers competing for "Employee of the Month." To encourage friendly competition, we made sure the gameplay was simple but engaging, with a focus on skill and precision.
 
-**Joystick for Aiming**
+**Joystick for Aiming:**
 Since the concept of our game is pretty straightforward, we wanted to add a bit of challenge. We decided to use the joystick to control the crosshair. This forces players to aim precisely at ghosts while avoiding black cats. It adds a level of skill and precision to the game, making each shot feel more rewarding and keeping the player engaged.
 
-**Button 1 and Button 2 for Firing and Reloading**
+**Button 1 and Button 2 for Firing and Reloading:**
 For an arcade shooter, it makes sense to have a fire button, but we also wanted to include a reload mechanic. The reload is there to prevent players from just spamming the fire button. It encourages them to focus more on precision rather than button mashing.
 
-**Why an Arcade Shooter with Points?**
+**Why an Arcade Shooter with Points?:**
 We chose the arcade shooter genre because it's fast-paced and fun, and you can usually find these types of machines in arcades. However, one thing we noticed about many classic arcade shooters is that they often don’t have a points system, which takes away from the competitive aspect. We thought, "What would make this type of game even more fun?" and decided that adding a point system would be perfect. Point systems are common in short, simple games, and they create an extra layer of friendly competition. By adding points, we make the game more motivating and give players a reason to keep coming back. Players enjoy competing, so why not let them challenge each other for the highest score? This way, the game encourages repeated play, as players aim to improve and win.
 
 ---
