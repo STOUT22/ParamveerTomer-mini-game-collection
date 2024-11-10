@@ -1,6 +1,6 @@
 using UnityEngine;
-using TMPro; // Add the TextMeshPro namespace
-using UnityEngine.SceneManagement; // For loading a new scene
+using TMPro;
+using UnityEngine.SceneManagement;
 
 namespace MiniGameCollection.Games2024.Team12
 {
@@ -10,7 +10,7 @@ namespace MiniGameCollection.Games2024.Team12
         private float timer = 60f; // 1-minute countdown timer
         private bool gameOver = false;
 
-        public string sceneToLoad = "MainMenu"; // Name of the scene to load (set this in the inspector)
+        public string sceneToLoad = "2024-team12-GameOver"; // Name of the scene to load (set this in the inspector)
 
         void Update()
         {
@@ -44,6 +44,8 @@ namespace MiniGameCollection.Games2024.Team12
         void EndGame()
         {
             gameOver = true;
+
+            // Optionally, you can pass the scores here if you have the scores ready
             Invoke("LoadScene", 1f); // Delay scene change by 1 second (optional)
         }
 
