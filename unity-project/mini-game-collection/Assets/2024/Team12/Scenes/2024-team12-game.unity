@@ -600,6 +600,7 @@ GameObject:
   - component: {fileID: 377695036}
   - component: {fileID: 377695039}
   - component: {fileID: 377695038}
+  - component: {fileID: 377695040}
   m_Layer: 5
   m_Name: P2Crosshair
   m_TagString: Crosshair2
@@ -664,6 +665,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377695035}
   m_CullTransparentMesh: 1
+--- !u!114 &377695040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377695035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a080c0273890b5c4f87894371bd56bdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &431228991
 GameObject:
   m_ObjectHideFlags: 0
@@ -1633,6 +1646,7 @@ GameObject:
   - component: {fileID: 1255121002}
   - component: {fileID: 1255121005}
   - component: {fileID: 1255121004}
+  - component: {fileID: 1255121006}
   m_Layer: 5
   m_Name: P1Crosshair
   m_TagString: Crosshair1
@@ -1697,6 +1711,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255121001}
   m_CullTransparentMesh: 1
+--- !u!114 &1255121006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255121001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7497526e9021104ba7ed39bef74006f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1309787764
 GameObject:
   m_ObjectHideFlags: 0

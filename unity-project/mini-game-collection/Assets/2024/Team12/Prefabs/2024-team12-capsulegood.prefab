@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -4167796334987562521}
   - component: {fileID: 7394543698790459330}
   - component: {fileID: 129159841468511399}
+  - component: {fileID: -2067961595682764252}
   m_Layer: 0
   m_Name: 2024-team12-capsulegood
   m_TagString: Ghost
@@ -164,3 +165,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &-2067961595682764252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9125340788359536948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2295a381948d44595cebf7864f87b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
