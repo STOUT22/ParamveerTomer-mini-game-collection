@@ -51,8 +51,10 @@ namespace MiniGameCollection.Games2024.Team12
             // Raycast to detect if the ray hits any object
             if (Physics.Raycast(ray, out hit))
             {
+
+                bool hasGhostTag = hit.collider.GetComponent<GhostTag>() != null;
                 // Check if the hit object is tagged as "Ghost"
-                if (hit.transform.CompareTag("Ghost"))
+                if (hasGhostTag)
                 {
                     // Retrieve the GhostScorer component from the hit ghost
                     GhostScorer ghostScorer = hit.transform.GetComponent<GhostScorer>();

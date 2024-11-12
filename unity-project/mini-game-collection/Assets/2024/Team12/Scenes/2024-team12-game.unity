@@ -603,7 +603,7 @@ GameObject:
   - component: {fileID: 377695040}
   m_Layer: 5
   m_Name: P2Crosshair
-  m_TagString: Crosshair2
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1649,7 +1649,7 @@ GameObject:
   - component: {fileID: 1255121006}
   m_Layer: 5
   m_Name: P1Crosshair
-  m_TagString: Crosshair1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

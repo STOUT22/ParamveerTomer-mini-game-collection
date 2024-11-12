@@ -12,6 +12,7 @@ namespace MiniGameCollection.Games2024.Team12
         private int ammoCount; // Current ammo count
         private bool isReloading; // Check if reloading
 
+        
         void Start()
         {
             ammoCount = maxAmmo; // Initialize ammo count
@@ -49,22 +50,27 @@ namespace MiniGameCollection.Games2024.Team12
             Debug.DrawRay(ray.origin, ray.direction * 10, Color.green, 2f); // Shows the ray for 2 seconds in the scene
 
             // Raycast to detect if the ray hits any object
-            if (Physics.Raycast(ray, out hit))
-            {
-                // Check if the hit object is tagged as "Ghost"
-                if (hit.transform.CompareTag("Ghost"))
+            //bool hasGhostTag = hit.transform.CompareTag("Ghost") != null;
+                if (Physics.Raycast(ray, out hit))
                 {
-                    // Retrieve the GhostScorer component from the hit ghost
-                    GhostScorer ghostScorer = hit.transform.GetComponent<GhostScorer>();
-                    if (ghostScorer != null)
-                    {
-                        // Update the score for Crosshair1 based on the ghost's score value
-                        ScoreManager.Instance.UpdateScore1(ghostScorer.scoreValue);
-                    }
+                    // hit = hit.collider.gameObject;
 
-                    Destroy(hit.transform.gameObject); // Destroy the ghost on hit
+                    bool hasGhostTag = hit.collider.GetComponent<GhostTag>() != null;
+                    // Check if the hit object is tagged as "Ghost"
+                    if (hasGhostTag)
+                    {
+                        // Retrieve the GhostScorer component from the hit ghost
+                        GhostScorer ghostScorer = hit.transform.GetComponent<GhostScorer>();
+                        if (ghostScorer != null)
+                        {
+                            // Update the score for Crosshair1 based on the ghost's score value
+                            ScoreManager.Instance.UpdateScore1(ghostScorer.scoreValue);
+                        }
+
+                        Destroy(hit.transform.gameObject); // Destroy the ghost on hit
+                    }
                 }
-            }
+            
         }
 
         // Reload coroutine with a delay
